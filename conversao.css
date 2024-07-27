@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #05115c;
+    box-sizing: border-box;
+}
+
+.board{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px black;
+    min-height: 100vh;
+    color: #fff;
+    padding:1rem;
+    width: 100%;
+}
+
+/*Apresentação*/
+#presentation{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/*Quadro de seleção de moedas e apresentação da conversão*/
+
+ .container, #presentation{
+    min-height: 500px;
+    width: 50%;
+    padding:2rem;
+    margin: 2rem;
+ }
+
+.container{
+    border:solid 1px black;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.correncyInput{
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    width: 90%;
+    border: solid 1px #ccc;
+    height: 50px;
+}
+
+#currencyValue{
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 5px;
+}
+
+.selectCorrencyContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*Botões*/
+
+button{
+    border-radius: 10px;
+    padding: 10px 5px;
+    width: 160px;
+    background-color: #05115c;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    margin: 5px;
+    border: none;
+}
+
+button:hover{
+    background-color:#1d3fbd;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    margin: 0 auto;
+    /*border: solid 1px black;*/
+    width: 80%;
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+
+/*Valor convertido*/
+
+.displayValue{
+    text-align: center;
+    border-top: solid 1px #ccc;
+    width: 100%;
+    padding-top: 1rem;
+    font-size: 20px;
+}
+
+/*Apresentação*/
+
+#presentation{
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #1d3fbd;
+}
+
+h1{
+    color: #eeb82c;
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+
+.icon{
+    margin-right: 1rem;
+}
+
+article{
+    line-height: 30px;
+    font-size: larger;
+    font-weight: 500;
+    text-align: justify;
+}
+
+@media(max-width: 1120px){
+    h1{
+        font-size: 25px;
+    }
+
+    article{
+        font-size: medium;
+    }
+    
+}
+
+
+@media(max-width: 900px){
+  
+    .board{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container, #presentation{
+        width: 100%;
+     }
+
+}

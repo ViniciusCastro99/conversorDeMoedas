@@ -1,0 +1,3 @@
+chave api cd55b85e8ab95af19ccc26b9
+
+https://www.exchangerate-api.com/
